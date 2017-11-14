@@ -1,0 +1,16 @@
+﻿.line {
+    width: 45vw;
+    height: 1.5px;
+    margin-top: 2vw;
+    position: relative;
+
+    &--left {
+        background-image: linear-gradient(to right, $gradient-blue 0%,rgba(19,95,63,0) 100%);
+        float: left;
+    }
+
+    &--right {
+        background-image: linear-gradient(to left, $gradient-blue 0%, rgba(19,95,63,0) 100%);
+        float: right;
+    }
+}

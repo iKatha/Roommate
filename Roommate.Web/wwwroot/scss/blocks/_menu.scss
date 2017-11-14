@@ -1,0 +1,37 @@
+﻿.menu {
+    font-size: 2vw;
+    font-family: 'Ubuntu Mono', monospace;
+    display: inline;
+    margin-top: 5vw;
+
+    &--left {
+        float: left;
+        margin-left: 12vw;
+    }
+
+    &--right {
+        float: right;
+        margin-right: 12vw;
+    }
+
+    &__item {
+        display: inline-block;
+        text-decoration: none;
+        color: $white;
+
+        &--right {
+            margin-right: 2vw;
+        }
+
+        &--left {
+            margin-left: 2vw;
+        }
+
+        &--active {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to bottom, $gradient-green 0%,$gradient-blue 100%);
+            font-weight: bold;
+        }
+    }
+}

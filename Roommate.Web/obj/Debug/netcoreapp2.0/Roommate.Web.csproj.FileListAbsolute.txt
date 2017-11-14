@@ -1,0 +1,11 @@
+C:\Users\kasia\source\repos\Roommate\Roommate.Web\bin\Debug\netcoreapp2.0\Roommate.Web.deps.json
+C:\Users\kasia\source\repos\Roommate\Roommate.Web\bin\Debug\netcoreapp2.0\Roommate.Web.runtimeconfig.json
+C:\Users\kasia\source\repos\Roommate\Roommate.Web\bin\Debug\netcoreapp2.0\Roommate.Web.runtimeconfig.dev.json
+C:\Users\kasia\source\repos\Roommate\Roommate.Web\bin\Debug\netcoreapp2.0\Roommate.Web.dll
+C:\Users\kasia\source\repos\Roommate\Roommate.Web\obj\Debug\netcoreapp2.0\Roommate.Web.csprojResolveAssemblyReference.cache
+C:\Users\kasia\source\repos\Roommate\Roommate.Web\obj\Debug\netcoreapp2.0\Roommate.Web.csproj.CoreCompileInputs.cache
+C:\Users\kasia\source\repos\Roommate\Roommate.Web\obj\Debug\netcoreapp2.0\Roommate.Web.AssemblyInfoInputs.cache
+C:\Users\kasia\source\repos\Roommate\Roommate.Web\obj\Debug\netcoreapp2.0\Roommate.Web.AssemblyInfo.cs
+C:\Users\kasia\source\repos\Roommate\Roommate.Web\bin\Debug\netcoreapp2.0\Roommate.Web.pdb
+C:\Users\kasia\source\repos\Roommate\Roommate.Web\obj\Debug\netcoreapp2.0\Roommate.Web.dll
+C:\Users\kasia\source\repos\Roommate\Roommate.Web\obj\Debug\netcoreapp2.0\Roommate.Web.pdb

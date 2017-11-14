@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background-image: url(images/banner.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 0px) and (max-width: 779px) {
+  .banner {
+    display: none;
+  }
+}
+
+.menu {
+  font-size: 2vw;
+  font-family: 'Ubuntu Mono', monospace;
+  display: inline;
+  margin-top: 5vw;
+}
+
+.menu--left {
+  float: left;
+  margin-left: 12vw;
+}
+
+.menu--right {
+  float: right;
+  margin-right: 12vw;
+}
+
+.menu__item {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu__item--right {
+  margin-right: 2vw;
+}
+
+.menu__item--left {
+  margin-left: 2vw;
+}
+
+.menu__item--active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to bottom, #30f2a0 0%, #52C4E2 100%);
+  font-weight: bold;
+}
+
+.line {
+  width: 45vw;
+  height: 1.5px;
+  margin-top: 2vw;
+  position: relative;
+}
+
+.line--left {
+  background-image: linear-gradient(to right, #52C4E2 0%, rgba(19, 95, 63, 0) 100%);
+  float: left;
+}
+
+.line--right {
+  background-image: linear-gradient(to left, #52C4E2 0%, rgba(19, 95, 63, 0) 100%);
+  float: right;
+}
+
+.secondary-menu {
+  font-size: 1.8vw;
+  font-family: 'Ubuntu Mono', monospace;
+  margin-top: 35vw;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.secondary-menu__item {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  height: 3.5vw;
+  width: 14vw;
+  background-image: linear-gradient(to bottom, rgba(82, 196, 226, 0.7) 0%, rgba(19, 95, 63, 0.7) 100%);
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
+  line-height: 3.5vw;
+}
+
+.secondary-menu__item--active {
+  background-color: #141414;
+  background-image: none;
+  font-weight: bold;
+}
+
+.main {
+  background-color: #141414;
+}

@@ -1,0 +1,38 @@
+﻿@mixin breakpoint($point, $value: 0) {
+
+    @if $point == xs {
+        @media screen and (max-width: $xs-max) {
+            @content;
+        }
+    }
+
+    @else if $point == sm {
+        @media screen and (min-width: $sm-min) {
+            @content;
+        }
+    }
+
+    @else if $point == md {
+        @media screen and (min-width: $md-min) {
+            @content;
+        }
+    }
+
+    @else if $point == lg {
+        @media screen and (min-width: $lg-min) {
+            @content;
+        }
+    }
+
+    @else {
+        @media screen and ($point: $value) {
+            @content;
+        }
+    }
+}
+
+@mixin breakpoint-between($start-point, $end-point) {
+    @media screen and (min-width: $start-point) and (max-width: $end-point) {
+        @content;
+    }
+}

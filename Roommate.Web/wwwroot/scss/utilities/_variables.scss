@@ -1,0 +1,25 @@
+﻿//topohography
+//colors
+
+$white: #ffffff;
+$light-black: rgb(20,20,20);
+$gradient-blue: #52C4E2;
+$gradient-green: #30f2a0;
+$transparent-black: rgba(0,0,0,0.6);
+
+//breakpoints
+$breakpoint-xs: 320px;
+$breakpoint-sm: 540px;
+$breakpoint-md: 780px;
+$breakpoint-lg: 1000px;
+
+$xs-min: 0px;
+$xs-max: $breakpoint-sm - 1px;
+
+$sm-min: $breakpoint-sm;
+$sm-max: $breakpoint-md - 1px;
+
+$md-min: $breakpoint-md;
+$md-max: $breakpoint-lg - 1px;
+
+$lg-min: $breakpoint-lg;

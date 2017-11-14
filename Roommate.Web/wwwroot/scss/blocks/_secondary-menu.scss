@@ -1,0 +1,27 @@
+﻿.secondary-menu {
+    font-size: 1.8vw;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 35vw;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    &__item {
+        display: inline-block;
+        text-decoration: none;
+        color: $white;
+        height: 3.5vw;
+        width: 14vw;
+        background-image: linear-gradient(to bottom, rgba(82,196,226, 0.7) 0%,rgba(19,95,63,0.7) 100%);
+        border-top-left-radius: 2vw;
+        border-top-right-radius: 2vw;
+        line-height: 3.5vw;
+
+        &--active {
+            background-color: $light-black;
+            background-image: none;
+            font-weight: bold;
+        }
+    }
+}

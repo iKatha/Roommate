@@ -1,0 +1,54 @@
+{
+  "author": "Katarzyna Klimek",
+  "dependencies": {
+    "axios": "^0.17.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "expect": "^21.2.1",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "node-sass": "^4.6.0",
+    "normalizr": "^3.2.4",
+    "pusher-js": "^4.2.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-pusher": "^0.1.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0",
+    "uuid": "^3.1.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-middleware": "^1.12.0"
+  },
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "main": "src/index.js",
+  "name": "Roomate.Web",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "img-loader": "^2.0.0",
+    "resolve-url-loader": "^2.2.0",
+    "sass-loader": "^6.0.6",
+    "url-loader": "^0.6.2"
+  },
+  "-vs-binding": {
+    "AfterBuild": [
+      "build"
+    ]
+  }
+}
