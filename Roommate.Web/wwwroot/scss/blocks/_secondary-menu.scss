@@ -1,4 +1,5 @@
 ﻿.secondary-menu {
+    width: 100%;
     font-size: 1.8vw;
     font-family: 'Ubuntu Mono', monospace;
     margin-top: 35vw;
@@ -6,6 +7,7 @@
     text-align: center;
     left: 50%;
     transform: translate(-50%, 0);
+    background-color: transparent;
 
     &__item {
         display: inline-block;

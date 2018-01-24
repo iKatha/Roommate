@@ -5,19 +5,22 @@ namespace Roommate.Api.Entities
     public class Location : Entity
     {
         public virtual string Province { get; set; }
-        public virtual string City { get; set; }
-        public virtual string District { get; set; }
-        public virtual IList <RentingOffert> RentingOffers { get; protected set; }
+        public virtual IList <City> Cities { get; set; }
 
         public Location()
         {
-            RentingOffers = new List<RentingOffert>();
+            Cities = new List<City>();
         }
+    }
 
-        public virtual void AddRentingOffert(RentingOffert rentingOffert)
+    public class City : Entity
+    {
+        public virtual string Name { get; set; }
+        public virtual IList <string> Districts { get; set; }
+
+        public City()
         {
-            RentingOffers.Add(rentingOffert);
-            rentingOffert.Location = this;
+            Districts = new List<string>();
         }
     }
 }

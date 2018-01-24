@@ -1,0 +1,168 @@
+﻿.announcement {
+    text-align: center;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    font-size: 1.5vw;
+
+    &__delete {
+        float: right;
+        margin-right: 1vw;
+        margin-top: .5vw;
+
+        &:hover {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: $gradient;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+
+    &__empty {
+        margin-top: 5vw;
+        color: grey;
+    }
+
+    &__label {
+        display: block;
+        font-size: 1vw;
+        margin-top: 1vw;
+        float: left;
+        margin-left: 0.5vw;
+    }
+
+    &__message {
+        resize: none;
+        display: inline-block;
+        width: 45vw;
+        height: 3vw;
+        background: white;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        padding: 0.2vw 1vw;
+
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            background-color: #F5F5F5;
+        }
+
+        &::-webkit-scrollbar {
+            width: 12px;
+            border-radius: 10px;
+            background-color: #F5F5F5;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-image: $gradient;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        margin-top: 2vw;
+        padding: 0vw 15vw;
+        margin-bottom: 4vw;
+        text-align: left;
+        font-size: 2vw;
+    }
+
+    &__item {
+        font-size: 1.2vw;
+        margin-bottom: 3vw;
+
+        &--message {
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            padding: 1vw;
+            font-size: 1.8vw;
+        }
+    }
+
+    &__button {
+        border-radius: 10px;
+        height: 3vw;
+        border: none;
+        background-image: $dark-gradient2;
+        color: white;
+        outline-style: none;
+        font-weight: bold;
+        display: inline-block;
+        width: 15vw;
+
+        &:hover {
+            background-image: $gradient;
+        }
+    }
+
+
+    &__loader {
+        margin: auto;
+        margin-top: 4vw;
+        font-size: 2vw;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: $gradient;
+        font-weight: bold;
+        width: 25vw;
+
+        > div {
+            margin-top: 1.2vw;
+            position: absolute;
+            width: 1vw;
+            height: 1vw;
+            background-image: $gradient;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+
+        .first-dot {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+            margin-left: 1vw;
+        }
+
+        .second-dot {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+            margin-left: 2.5vw;
+        }
+
+        .third-dot {
+            margin-left: 4vw;
+        }
+
+        @-webkit-keyframes sk-bouncedelay {
+            0%, 80%, 100% {
+                -webkit-transform: scale(0)
+            }
+
+            40% {
+                -webkit-transform: scale(1.0)
+            }
+        }
+
+        @keyframes sk-bouncedelay {
+            0%, 80%, 100% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+
+            40% {
+                -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+﻿.surface-area {
+    display: inline-block;
+    width: 50%;
+    margin-top: 4.5vw;
+    vertical-align: text-top;
+    margin-left: 14vw;
+    position: relative;
+
+    &__range {
+        display: inline-block;
+        width: 23vw;
+
+        &--min {
+            position: absolute;
+            text-align: left;
+            width: 23vw;
+            top: -2.3vw;
+            left: 25vw;
+            font-size: 1.5vw;
+        }
+
+        &--max {
+            position: absolute;
+            text-align: right;
+            width: 9vw;
+            left: 31vw;
+            top: -2.3vw;
+            font-size: 1.5vw;
+        }
+
+        input {
+            pointer-events: none;
+            position: absolute;
+            -webkit-appearance: none;
+            border: none;
+            border-radius: 50px;
+            background: $white;
+            outline: none;
+            height: 2vw;
+            top: 1vw;
+            left: 21vw;
+            width: 23vw;
+
+            &::-webkit-slider-thumb {
+                pointer-events: all;
+                position: relative;
+                z-index: 1;
+                outline: 0;
+                -webkit-appearance: none;
+                width: 3vw;
+                height: 3vw;
+                border: none;
+                border-radius: 50px;
+                background-image: $gradient;
+            }
+
+            &:-moz-range-thumb {
+                pointer-events: all;
+                position: relative;
+                z-index: 10;
+                -moz-appearance: none;
+                width: 3vw;
+                height: 3vw;
+                border: none;
+                border-radius: 50px;
+                background-image: $gradient;
+            }
+
+            &::-ms-thumb {
+                pointer-events: all;
+                position: relative;
+                z-index: 10;
+                -ms-appearance: none;
+                width: 3vw;
+                height: 3vw;
+                border: none;
+                border-radius: 50px;
+                background-image: $gradient;
+            }
+
+            &::-moz-focus-outer {
+                border: 0;
+            }
+        }
+    }
+}

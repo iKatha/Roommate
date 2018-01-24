@@ -5,13 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\images\._user_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="src\components\Account\" />
-    <Folder Include="src\components\Home\" />
   </ItemGroup>
 
 </Project>

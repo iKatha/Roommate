@@ -1,17 +1,19 @@
 ﻿import React from "react";
 import AllOfferts from './AllOfferts';
-import MyChosenOffert from './MyChosenOffert';
-import MyOfferts from './MyOfferts';
-import ChosenOffert from './ChosenOffert';
+import MyOfferts from '../../containers/Renting/MyOfferts';
+import ChosenOffert from '../../containers/Renting/ChosenOffert';
 import { Switch, Route } from 'react-router-dom';
+import NewOffert from '../../containers/Renting/NewOffert';
 
 const Renting = () => (
-    <Switch>
-        <Route exact path="/wynajem" component={AllOfferts} />
-        <Route exact path="/wynajem/moje-oferty" component={MyOfferts} />
-        <Route path="/wynajem/moje-oferty/:id" component={MyChosenOffert} /> 
-        <Route path="/wynajem/:id" component={ChosenOffert} />
-    </Switch>
+    <div>
+        <Switch>
+            <Route exact path="/wynajem/moje-oferty/nowa-oferta" component={NewOffert} />
+            <Route exact path="/wynajem/moje-oferty" component={MyOfferts} />
+            <Route exact path="/wynajem/:pageNumber?" component={AllOfferts} />
+            <Route path="/wynajem/oferta/:id" component={ChosenOffert} />
+        </Switch>
+    </div>
 );
 
 export default Renting;

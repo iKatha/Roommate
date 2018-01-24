@@ -1,0 +1,41 @@
+﻿[data-tip] {
+    position: relative;
+}
+
+[data-tip]:before {
+    content: '';
+    /* hides the tooltip when not hovered */
+    display: none;
+    content: '';
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 7px solid #3bc1aa;
+    position: absolute;
+    top: 1.7vw;
+    right: 55vw;
+    z-index: 8;
+}
+
+[data-tip]:after {
+    white-space: normal;
+    text-align: center;
+    width: 30vw;
+    display: none;
+    content: attr(data-tip);
+    position: absolute;
+    top: 0.9vw;
+    right: 55.5vw;
+    padding: 5px 8px;
+    background: $sea-color;
+    color: #fff;
+    z-index: 9;
+    font-size: 1.3vw;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+    display: block;
+}

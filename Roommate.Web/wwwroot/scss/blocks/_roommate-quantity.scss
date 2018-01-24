@@ -1,0 +1,82 @@
+﻿.roommate-quantity {
+    margin-top: 4.5vw;
+    vertical-align: text-top;
+    position: relative;
+    z-index: 400;
+    display: inline-block;
+    width: 33%;
+    margin-left: 14vw;
+
+    &__list {
+        color: black;
+        left: 21vw;
+        display: inline-block;
+        position: absolute;
+        margin-top: -0.5vw;
+
+        ul {
+            max-height: 250px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding: 0;
+            margin: 0;
+            background-color: $white;
+            color: black;
+            list-style-type: none;
+            width: 23vw;
+            border-radius: 0 0 10px 10px;
+            display: none;
+
+            &::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                border-radius: 10px;
+                background-color: #F5F5F5;
+            }
+
+            &::-webkit-scrollbar {
+                width: 12px;
+                border-radius: 10px;
+                background-color: #F5F5F5;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                background-image: $gradient;
+            }
+        }
+
+        li {
+            position: static;
+            background-color: $white;
+            padding: 5px;
+            font-size: 1.5vw;
+            padding-left: 2vw;
+
+            &:hover {
+                background-color: $dark-white;
+            }
+        }
+
+        input {
+            border: none;
+            border-bottom: 1px solid $dark-white;
+            font-size: 1.5vw;
+            color: grey;
+            width: 23vw;
+            height: 3vw;
+            background-color: $white;
+            border-radius: 10px;
+            text-align: center;
+            background-image: url(../../images/arrow_down_icon.png);
+            background-repeat: no-repeat;
+            background-size: 6%;
+            background-position-y: center;
+            background-position-x: 95%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

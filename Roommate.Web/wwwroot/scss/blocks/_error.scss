@@ -1,0 +1,23 @@
+﻿.error {
+    text-align: center;
+    color: white;
+
+    &__button {
+        border-radius: 10px;
+        width: 11vw;
+        height: 3vw;
+        border: none;
+        background-image: $dark-gradient2;
+        display: block;
+        margin: auto;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        color: white;
+        outline-style: none;
+        font-size: 2vw;
+
+        &:hover {
+            background-image: $gradient;
+        }
+    }
+}

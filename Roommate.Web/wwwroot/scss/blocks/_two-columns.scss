@@ -1,0 +1,21 @@
+﻿.column-one {
+    display: inline-block;
+    width: 25vw;
+    margin-bottom: 4vw;
+
+    &--new-offert {
+        margin-left: 18vw;
+    }
+}
+
+.column-two {
+    display: inline-block;
+    margin-right: 14vw;
+    width: 25vw;
+    float: right;
+    margin-bottom: 4vw;
+
+    &--new-offert {
+        margin-right: 18vw;
+    }
+}

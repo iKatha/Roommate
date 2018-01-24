@@ -1,0 +1,134 @@
+﻿.shopping {
+    text-align: center;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    font-size: 1.5vw;
+
+    &__empty {
+        margin-top: 5vw;
+        color: grey;
+    }
+
+    &__input {
+        display: inline-block;
+        width: 15vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 3vw;
+        background: white;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        padding-left: 1vw;
+        margin-right: 2vw;
+    }
+
+    &__list {
+        margin-top: 2vw;
+        margin-left: 38vw;
+        margin-bottom: 4vw;
+        text-align: left;
+        font-size: 2vw;
+    }
+
+    &__item {
+        margin-bottom: 1vw;
+    }
+
+    &__button {
+        border-radius: 10px;
+        width: 11vw;
+        height: 3vw;
+        border: none;
+        background-image: $dark-gradient2;
+        display: block;
+        margin: auto;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        color: white;
+        outline-style: none;
+        font-size: 1.9vw;
+
+        &:hover {
+            background-image: $gradient;
+        }
+
+        &--add {
+            display: inline-block;
+        }
+
+        &--clear {
+            margin-left: 36vw;
+        }
+
+        &:disabled {
+            text-decoration: none;
+            color: #b1b1b1;
+            background-image: linear-gradient(to bottom, rgba(82,196,226, 0.7) 0%,rgba(19,95,63,0.7) 100%);
+        }
+    }
+
+
+    &__loader {
+        margin: auto;
+        margin-top: 4vw;
+        font-size: 2vw;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: $gradient;
+        font-weight: bold;
+        width: 25vw;
+
+        > div {
+            margin-top: 1.2vw;
+            position: absolute;
+            width: 1vw;
+            height: 1vw;
+            background-image: $gradient;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+
+        .first-dot {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+            margin-left: 1vw;
+        }
+
+        .second-dot {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+            margin-left: 2.5vw;
+        }
+
+        .third-dot {
+            margin-left: 4vw;
+        }
+
+        @-webkit-keyframes sk-bouncedelay {
+            0%, 80%, 100% {
+                -webkit-transform: scale(0)
+            }
+
+            40% {
+                -webkit-transform: scale(1.0)
+            }
+        }
+
+        @keyframes sk-bouncedelay {
+            0%, 80%, 100% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+
+            40% {
+                -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+﻿.my-offerts {
+
+    &__empty {
+        text-align: center;
+        color: grey;
+    }
+
+    &__button {
+        border-radius: 10px;
+        height: 3vw;
+        border: none;
+        background-image: $dark-gradient2;
+        color: white;
+        outline-style: none;
+        display: inline-block;
+        text-decoration: none;
+        width: 16vw;
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+        margin-left: 78vw;
+        text-align: center;
+        line-height: 3vw;
+        font-size: 2vw;
+
+        &:hover {
+            background-image: $gradient;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        text-decoration: underline;
+        color: white;
+
+        &:hover {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: $gradient;
+            font-weight: bold;
+        }
+    }
+
+    &--not-logged {
+        text-align: center;
+        font-size: 2.5vw;
+        margin-top: 6vw;
+    }
+}

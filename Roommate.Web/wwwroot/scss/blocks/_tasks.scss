@@ -1,0 +1,194 @@
+﻿.tasks {
+    text-align: center;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    font-size: 1.5vw;
+
+    &__table-cover {
+        max-height: 100vw;
+        overflow-y: auto;
+    }
+
+    &__edit-column {
+        cursor: pointer;
+
+        &:hover {
+            color: $sea-color;
+        }
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: auto;
+        color: white;
+        border: 1.5px solid $sea-color;
+        text-align: left;
+        font-size: 1.2vw;
+        margin-bottom: 4vw;
+        margin-top: 1vw;
+    }
+
+    th, td {
+        padding: 1.5vw;
+        border-bottom: 1.5px solid $sea-color;
+    }
+
+    tr {
+        &:hover {
+            background-color: #f5f5f5;
+        }
+    }
+
+    &__loader {
+        margin: auto;
+        margin-top: 4vw;
+        font-size: 2vw;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: $gradient;
+        font-weight: bold;
+        width: 25vw;
+
+        > div {
+            margin-top: 1.2vw;
+            position: absolute;
+            width: 1vw;
+            height: 1vw;
+            background-image: $gradient;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+
+        .first-dot {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+            margin-left: 1vw;
+        }
+
+        .second-dot {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+            margin-left: 2.5vw;
+        }
+
+        .third-dot {
+            margin-left: 4vw;
+        }
+
+        @-webkit-keyframes sk-bouncedelay {
+            0%, 80%, 100% {
+                -webkit-transform: scale(0)
+            }
+
+            40% {
+                -webkit-transform: scale(1.0)
+            }
+        }
+
+        @keyframes sk-bouncedelay {
+            0%, 80%, 100% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+
+            40% {
+                -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+            }
+        }
+    }
+
+    input[type="radio"] {
+        display: none;
+
+        + label {
+            display: inline-block;
+            background: url(../../images/checkbox_unchecked_icon.png);
+            background-repeat: no-repeat;
+            background-position-x: 100%;
+            background-size: contain;
+            margin-right: 2vw;
+            padding-right: 2.5vw;
+        }
+
+        &:checked + label {
+            background: url(../../images/checkbox_checked_icon.png);
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position-x: 100%;
+            background-size: contain;
+            margin-right: 2vw;
+            padding-right: 2.5vw;
+        }
+    }
+
+    &__filter-label {
+        margin-right: 2vw;
+        font-weight: bold;
+    }
+
+    &__filter {
+        display: block;
+        margin-left: 8vw;
+        margin-bottom: 2vw;
+    }
+
+    &__filter-button {
+        display: block;
+        border-radius: 10px;
+        width: 11vw;
+        height: 3vw;
+        border: none;
+        background-image: $dark-gradient2;
+        color: white;
+        outline-style: none;
+        margin-left: 38vw;
+        margin-top: 2vw;
+        font-size: 1.6vw;
+
+        &:hover {
+            background-image: $gradient;
+        }
+    }
+
+    &__mark-task {
+        background-color: white;
+        display: inline-block;
+        margin-bottom: 3vw;
+    }
+
+    &__image {
+        background: transparent;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+        width: 5vw;
+    }
+
+    &__mark-button {
+        display: block;
+        border-radius: 10px;
+        width: 11vw;
+        height: 3vw;
+        border: none;
+        background-image: $dark-gradient2;
+        color: white;
+        outline-style: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vw;
+        margin-bottom: 1vw;
+        font-size: 1.6vw;
+
+        &:hover {
+            background-image: $gradient;
+        }
+    }
+
+    &__mark-description {
+        color: black;
+        background-color: white;
+    }
+}

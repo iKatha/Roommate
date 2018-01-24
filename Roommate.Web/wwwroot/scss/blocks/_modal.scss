@@ -1,0 +1,46 @@
+﻿.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999999;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+
+    &__content {
+        background-color: white;
+        margin: 10% auto;
+        padding: 1vw;
+        border: 1.5px solid transparent;
+        border-image: $dark-gradient2;
+        border-image-slice: 1;
+        width: 40%;
+    }
+
+    &__header {
+        background-color: white;
+        color: $sea-color;
+        margin-bottom: 4vw;
+        font-size: 3vw;
+        font-weight: bold;
+        margin-top: -2vw;
+    }
+
+    .close {
+        background-color: white;
+        color: $sea-color;
+        font-size: 4vw;
+        font-weight: bold;
+        margin-top: -1vw;
+        width: 1vw;
+
+        &:hover, focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}

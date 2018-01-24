@@ -1,0 +1,113 @@
+﻿.location {
+    vertical-align: text-top;
+    display: inline-block;
+    position: relative;
+    z-index: 999;
+    width: 33%;
+
+    &-list {
+        color: black;
+        left: 14vw;
+        display: inline-block;
+        position: absolute;
+        margin-top: -0.5vw;
+
+        &__parent {
+            background-image: url(../../images/arrow_right_icon.png);
+            background-repeat: no-repeat;
+            background-size: 6%;
+            background-position-y: center;
+            background-position-x: 95%;
+        }
+
+        input {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding-right: 4vw;
+            padding-left: 2vw;
+            font-size: 1.5vw;
+            border: none;
+            border-bottom: 1px solid $dark-white;
+            color: grey;
+            width: 25vw;
+            height: 3vw;
+            background-color: $white;
+            border-radius: 10px;
+            text-align: center;
+            background-image: url(../../images/location_icon.png);
+            background-repeat: no-repeat;
+            background-size: 9%;
+            background-position-y: center;
+            background-position-x: 95%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        ul {
+            max-height: 250px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding: 0;
+            margin: 0;
+            background-color: $white;
+            color: black;
+            list-style-type: none;
+            width: 25vw;
+            border-radius: 0 0 10px 10px;
+
+            &::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                border-radius: 10px;
+                background-color: #F5F5F5;
+            }
+
+            &::-webkit-scrollbar {
+                width: 12px;
+                border-radius: 10px;
+                background-color: #F5F5F5;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                background-image: $gradient;
+            }
+        }
+
+        &__wrapper {
+            display: none;
+
+            &--sub {
+                ul {
+                    border-radius: 0 10px 10px 0;
+                }
+            }
+        }
+
+        li {
+            position: static;
+            background-color: $white;
+            padding: 5px;
+            font-size: 1.5vw;
+            padding-left: 2vw;
+
+            &:hover {
+                background-color: $dark-white;
+            }
+
+            .location-list__wrapper {
+                position: absolute;
+                z-index: 10;
+                display: none;
+            }
+
+            &:hover > .location-list__wrapper {
+                display: block;
+                box-shadow: -2px 0px 4px 0px #aaaaaa;
+            }
+        }
+    }
+}

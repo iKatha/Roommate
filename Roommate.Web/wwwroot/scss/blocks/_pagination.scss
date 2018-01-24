@@ -1,0 +1,23 @@
+﻿.pagination {
+    display: block;
+    text-align: center;
+
+    &__number {
+        display: inline-block;
+        text-decoration: none;
+        margin: 2vw;
+        color: white;
+        font-size: 2vw;
+
+        &:hover {
+            color: #bdbdbd;
+        }
+
+        &--active {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: $gradient;
+            font-weight: bold;
+        }
+    }
+}

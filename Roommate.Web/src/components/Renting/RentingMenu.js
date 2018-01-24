@@ -1,7 +1,7 @@
 ﻿import React from 'react';
 import SecondaryMenuLink from '../../containers/Header/SecondaryMenuLink';
 
-const SecondaryMenu = () => (
+const RentingMenu = () => (
     <div className= "secondary-menu" >
         <SecondaryMenuLink filter='wynajem'>
             Oferty
@@ -12,4 +12,4 @@ const SecondaryMenu = () => (
     </div>
 );
 
-export default SecondaryMenu;
+export default RentingMenu;

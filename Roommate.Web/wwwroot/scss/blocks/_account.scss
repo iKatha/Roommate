@@ -1,0 +1,217 @@
+﻿.account {
+    margin-top: 4vw;
+    float: left;
+    position: relative;
+    left: -webkit-calc(50% - 12.5vw);
+    left: -moz-calc(50% - 12.5vw);
+    left: calc(50% - 12.5vw);
+    width: 55vw;
+
+    &__error-message {
+        text-align: center;
+        margin-top: 3vw;
+        font-weight: bold;
+        border: 1px solid #9e0909;
+        width: 23vw;
+        border-radius: 10px;
+        padding: 1vw;
+        font-size: 1.2vw;
+    }
+
+    &__success-message {
+        text-align: center;
+        margin-top: 3vw;
+        font-weight: bold;
+        border: 1px solid $gradient-green;
+        width: 23vw;
+        border-radius: 10px;
+        padding: 1vw;
+        font-size: 1.2vw;
+    }
+
+
+    &__validation-error {
+        display: inline-block;
+        margin-left: 4vw;
+        font-size: 1.5vw;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: $gradient;
+        font-weight: bold;
+        width: 26vw;
+        vertical-align: top;
+    }
+
+    &__input {
+        background-color: #ffffff;
+        width: 25vw;
+        display: inline-block;
+        margin-top: 1vw;
+        height: 2.5vw;
+        border-radius: 10px;
+        padding-left: 1vw;
+        font-family: $font;
+        font-size: 1.2vw;
+        border: none;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__phone {
+        background-image: url(../../images/phone_icon.png);
+        background-repeat: no-repeat;
+        background-size: 7%;
+        background-position-y: center;
+        background-position-x: 95%;
+    }
+
+    &__password {
+        background-image: url(../../images/padlock_icon.png);
+        background-repeat: no-repeat;
+        background-size: 7%;
+        background-position-y: center;
+        background-position-x: 95%;
+    }
+
+    &__photo {
+        display: none;
+
+        + label {
+            color: black;
+            padding-top: 0.5vw;
+            background-color: #ffffff;
+            width: 25vw;
+            display: inline-block;
+            margin-top: 1vw;
+            height: 2.5vw;
+            border-radius: 10px;
+            padding-left: 1vw;
+            font-family: $font;
+            font-size: 1.2vw;
+            border: 1px solid grey;
+            background-image: url(../../images/photo_icon.png);
+            background-repeat: no-repeat;
+            background-size: 7%;
+            background-position-y: center;
+            background-position-x: 95%;
+            box-sizing: border-box;
+        }
+    }
+
+    &__label {
+        padding-left: 1vw;
+        font-size: 1.5vw;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: $gradient;
+        font-weight: bold;
+        width: 25vw;
+        display: block;
+        margin-top: 2vw;
+        padding-left: 1vw;
+    }
+
+    &__button {
+        display: block;
+        text-align: center;
+        margin-top: 3vw;
+        border-radius: 10px;
+        width: 13vw;
+        height: 3vw;
+        font-family: $font;
+        font-size: 1.5vw;
+        margin-bottom: 4vw;
+        margin-left: 6vw;
+        border: none;
+        text-decoration: none;
+        color: $white;
+        background-image: $gradient;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:disabled {
+            text-decoration: none;
+            color: #b1b1b1;
+            background-image: linear-gradient(to bottom, rgba(82,196,226, 0.7) 0%,rgba(19,95,63,0.7) 100%);
+        }
+    }
+
+    &__photo-image {
+        width: 13vw;
+        height: 13vw;
+        background-color: white;
+        margin: 1vw 0 1vw 6vw;
+        object-fit: contain;
+    }
+
+    &__loader {
+        margin: 6vw 2vw;
+        font-size: 2vw;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: $gradient;
+        font-weight: bold;
+        width: 25vw;
+        left: calc(50% - 8vw);
+
+        &--change-account {
+            margin: 3vw 2vw;
+            left:initial;
+        }
+
+        > div {
+            margin-top: 1.2vw;
+            position: absolute;
+            width: 1vw;
+            height: 1vw;
+            background-image: $gradient;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+
+        .first-dot {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+            margin-left: 1vw;
+        }
+
+        .second-dot {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+            margin-left: 2.5vw;
+        }
+
+        .third-dot {
+            margin-left: 4vw;
+        }
+
+        @-webkit-keyframes sk-bouncedelay {
+            0%, 80%, 100% {
+                -webkit-transform: scale(0)
+            }
+
+            40% {
+                -webkit-transform: scale(1.0)
+            }
+        }
+
+        @keyframes sk-bouncedelay {
+            0%, 80%, 100% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+
+            40% {
+                -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+            }
+        }
+    }
+}

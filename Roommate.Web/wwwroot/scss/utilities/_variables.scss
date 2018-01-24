@@ -1,11 +1,20 @@
 ﻿//topohography
+$font : monospace;
 //colors
 
 $white: #ffffff;
 $light-black: rgb(20,20,20);
 $gradient-blue: #52C4E2;
+$dark-gradient-blue: #1284A2; 
 $gradient-green: #30f2a0;
+$dark-gradient-green: #00B260;
 $transparent-black: rgba(0,0,0,0.6);
+$dark-white: rgba(0,0,0,0.03);
+$sea-color: #3bc1aa ;
+$gradient: linear-gradient(to bottom, $gradient-green 0%,$gradient-blue 100%);
+$dark-gradient: linear-gradient(to bottom, $dark-gradient-green 0%,$dark-gradient-blue 100%);
+
+$dark-gradient2: linear-gradient(to bottom, rgba(82, 196, 226, 0.7) 0%, rgba(19, 95, 63, 0.7) 100%);
 
 //breakpoints
 $breakpoint-xs: 320px;
@@ -23,3 +32,21 @@ $md-min: $breakpoint-md;
 $md-max: $breakpoint-lg - 1px;
 
 $lg-min: $breakpoint-lg;
+
+
+$datepicker__background-color: #3bc1aa !default;
+$datepicker__border-color: #3bc1aa !default;
+$datepicker__highlighted-color: #3dcc4a !default;
+$datepicker__muted-color: #3bc1aa !default;
+$datepicker__selected-color: #3bc1aa !default;
+$datepicker__text-color: #000 !default;
+$datepicker__header-color: #000 !default;
+
+$datepicker__border-radius: .3rem !default;
+$datepicker__day-margin: .166rem !default;
+$datepicker__font-size: .8rem !default;
+$datepicker__font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$datepicker__item-size: 1.7rem !default;
+$datepicker__margin: .4rem !default;
+$datepicker__navigation-size: .45rem !default;
+$datepicker__triangle-size: 8px !default;
